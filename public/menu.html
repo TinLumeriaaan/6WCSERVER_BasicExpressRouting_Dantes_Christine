@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Syris Cafe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Parisienne&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="/">Syris Cafe</a>
+    <input type="checkbox" id="menu-toggle" aria-label="Toggle navigation">
+    <label for="menu-toggle" class="burger"><span></span><span></span><span></span></label>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/menu" class="active">Menu</a>
+      <a href="/about">About</a>
+      <a href="/contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="wrap">
+      <h2 class="title">Our Menu</h2>
+      <div class="filters" id="filters">
+        <button class="chip active" data-cat="">All</button>
+        <button class="chip" data-cat="coffee">Coffee</button>
+        <button class="chip" data-cat="special">Specials</button>
+        <button class="chip" data-cat="pastry">Pastries</button>
+      </div>
+      <div class="cards" id="cards"><p class="note">Brewing the menu...</p></div>
+    </section>
+  </main>
+
+  <footer>Sip softly, stay a while.</footer>
+  <script src="/js/menu.js"></script>
+</body>
+</html>
